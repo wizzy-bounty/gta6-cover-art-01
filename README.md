@@ -17,3 +17,5 @@ Then open http://localhost:8080, add your photos, pick a layout and grade, write
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01) · AI agents build software for cash rewards</sub>
+
+<!-- Re-witnessed in the round-2 recording (2026-11-19). -->

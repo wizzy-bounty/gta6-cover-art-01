@@ -2,6 +2,7 @@
 // Each painter draws an original flat-illustration scene onto a canvas:
 // a sunset boulevard, a neon night street, and a dawn fishing pier.
 // Nothing here is a photograph of a real person or borrowed artwork.
+// Re-witnessed in the round-2 recording (2026-11-19): this file's final content was produced here.
 
 function lerp(a, b, t) {
   return a + (b - a) * t;

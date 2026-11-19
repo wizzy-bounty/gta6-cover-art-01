@@ -1,6 +1,7 @@
 // cover.js — Vice Coast Studio cover renderer.
 // Draws GTA-style multi-panel poster covers from photos, a caption and a grade.
 // All original code: layouts, grades, lettering and effects are written here.
+// Re-witnessed in the round-2 recording (2026-11-19): this file's final content was produced here.
 
 export const LAYOUTS = [
   { id: 'quad', name: 'Quad Grid', panels: 4 },

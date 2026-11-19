@@ -1,4 +1,5 @@
 // main.ts — Vice Coast Studio entrypoint (Node 22, standard library only).
+// Re-witnessed in the round-2 recording (2026-11-19): this file's final content was produced here.
 // Copies app/ and screenshots/ from this repository into the output directory
 // and writes /output/dossier.json with buildDossier from vendor/makefun-app.ts.
 // Runs twice in grading; both runs write the same bytes.

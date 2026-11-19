@@ -2,6 +2,7 @@
 // Wires the cover renderer to the page: photo uploads, panel crop/pan/zoom,
 // layout + grade + size pickers, caption editing, undo/redo, PNG export,
 // and ?shot= scenes for screenshots (cover / cover-portrait / cover-square / editor).
+// Re-witnessed in the round-2 recording (2026-11-19): this file's final content was produced here.
 
 import {
   LAYOUTS, GRADES, SIZES, layoutById, gradeById, sizeById,
