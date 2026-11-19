@@ -40,8 +40,16 @@ function copyTree(srcDir: string, dstDir: string): void {
 }
 
 function main(): void {
-  if (existsSync(outDir)) rmSync(outDir, { recursive: true, force: true });
-  mkdirSync(outDir, { recursive: true });
+  // The output directory may be a volume mount (on the grader, /output is):
+  // removing the directory itself then throws and the run exits 1. So when
+  // it already exists, clear only its contents; create it only when absent.
+  if (existsSync(outDir)) {
+    for (const entry of readdirSync(outDir)) {
+      rmSync(join(outDir, entry), { recursive: true, force: true });
+    }
+  } else {
+    mkdirSync(outDir, { recursive: true });
+  }
   const appDir = join(repoRoot, 'app');
   const shotsDir = join(repoRoot, 'screenshots');
   if (!statSync(appDir).isDirectory()) throw new Error('main.ts: app/ is missing');
